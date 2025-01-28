@@ -1,4 +1,4 @@
-def get_mask_card_number(card_number: int) -> str:
+def get_mask_card_number(card_number: str) -> str:
     card_number = str(card_number)
 
     # Формируем замаскированные блоки
@@ -13,7 +13,7 @@ def get_mask_card_number(card_number: int) -> str:
     return masked_card
 
 
-def get_mask_account(number_acc):
+def get_mask_account(number_acc: str) -> str:
     str_number = str(number_acc)
     if len(number_acc) < 4:
         return "Неверный номер счёта"
