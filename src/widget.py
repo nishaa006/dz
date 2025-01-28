@@ -1,4 +1,6 @@
 from src import masks
+
+
 def mask_account_card(account: str) -> str:
     num = ""
     card_num = ""
