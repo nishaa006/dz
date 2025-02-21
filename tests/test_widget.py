@@ -23,7 +23,6 @@ def test_mask_account_card_invalid(acc: str) -> None:
             mask_account_card(acc)
 
 
-
 @pytest.mark.parametrize(
     "date, expected",
     [
