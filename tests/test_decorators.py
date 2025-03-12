@@ -20,8 +20,8 @@ def test_successful_function():
 
 
 def test_function_with_error():
-    setup_function()
     """очистка файла перед тестом"""
+    setup_function()
     logged_func = log("test_log.txt")(error_function)
     result = logged_func(0)
     assert result is None

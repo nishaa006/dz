@@ -2,7 +2,8 @@ import functools
 
 
 def log(filename=None):
-    """Декоратор для логирования вызовов функций """
+    """Декоратор для логирования вызовов функций"""
+
     def decorator(func):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
@@ -33,7 +34,6 @@ def my_function(x, y):
 
 
 my_function(1, 2)
-
 
 
 @log()
