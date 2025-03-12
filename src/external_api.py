@@ -8,6 +8,7 @@ load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
 
+
 def convert_to_rub(amount, from_currency):
     """функция для конвертации суммы из одной валюты в рубли"""
     if from_currency not in ['USD', 'EUR']:
