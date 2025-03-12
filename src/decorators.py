@@ -1,5 +1,6 @@
 import functools
 
+
 def log(filename=None):
     """Декоратор для логирования вызовов функций """
     def decorator(func):
@@ -25,27 +26,20 @@ def log(filename=None):
     return decorator
 
 
-
-"""декоратор для логирования вызовов функций"""
-
-
 @log("mylog.txt")
 def my_function(x, y):
+    """функция, демонстирующая складывание"""
     return x + y
 
 
 my_function(1, 2)
 
 
-"""функция, демонстирующая складывание"""
-
 
 @log()
 def error_function(x):
+    """функция, демонстрирующая деление на ноль"""
     return 1 / x
 
 
 error_function(0)
-
-
-"""функция, демонстрирующая деление на ноль"""

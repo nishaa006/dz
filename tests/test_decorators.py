@@ -2,10 +2,12 @@ import os
 import pytest
 from src.decorators import log, my_function, error_function
 
+
 def setup_function():
     """oчищает лог перед каждым тестом."""
     if os.path.exists("test_log.txt"):
         os.remove("test_log.txt")
+
 
 def test_successful_function():
     setup_function()
