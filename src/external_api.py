@@ -36,8 +36,8 @@ def convert_to_rub(amount, from_currency):
 
 def process_transaction(transaction):
     """функция для обработки транзакции и получения суммы в рублях"""
-    amount = transaction['amount']
-    currency = transaction['currency']
+    amount = transaction['operationAmount']['amount']
+    currency = transaction['operationAmount']['currency']['name']
 
     if currency in ['USD', 'EUR']:
         return convert_to_rub(amount, currency)
