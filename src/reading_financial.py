@@ -39,13 +39,12 @@ def read_transactions_from_excel(file_path_xlsx):
     return transactions
 
 
-# Вывод текущей директории для отладки
 print("Текущая рабочая директория:", os.getcwd())
 
-# Укажи полный путь к файлам, если они в другой папке
+
 csv_path = os.path.abspath('transactions.csv')
 excel_path = os.path.abspath('transactions_excel.xlsx')
 
-# Читаем файлы
+
 read_transactions_from_csv(csv_path)
 read_transactions_from_excel(excel_path)
