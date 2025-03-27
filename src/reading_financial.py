@@ -42,8 +42,8 @@ def read_transactions_from_excel(file_path_xlsx):
 print("Текущая рабочая директория:", os.getcwd())
 
 
-csv_path = os.path.abspath('transactions.csv')
-excel_path = os.path.abspath('transactions_excel.xlsx')
+csv_path = os.path.abspath('../data/transactions.csv')
+excel_path = os.path.abspath('../data/transactions_excel.xlsx')
 
 
 read_transactions_from_csv(csv_path)
