@@ -32,8 +32,7 @@ def test_total_products_and_categories():
 
     p1 = Product("Телевизор", "Большой экран", 49999.99, 3)
     p2 = Product("Колонки", "Аудиосистема", 15999.99, 7)
-    c1 = Category("Аудио", "Звук", [p2])
-    c2 = Category("Видео", "Изображение", [p1])
+
 
     assert Category.total_categories == 2
     assert Category.total_products == 2

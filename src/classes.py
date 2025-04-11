@@ -1,4 +1,5 @@
 class Product:
+#класс product
     def __init__(self, name: str, description: str, price: float, quantity: int):
         self.name = name
         self.description = description
@@ -7,6 +8,7 @@ class Product:
 
 
 class Category:
+#класс category
     _category_count = 0
     _product_count = 0
 
